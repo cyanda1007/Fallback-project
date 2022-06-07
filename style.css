@@ -1,0 +1,48 @@
+h1{
+    color: whitesmoke;
+    text-align: center;
+}
+
+.container{
+color: blue;
+    background:url(Pictures/istockphoto-861188910-612x612.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover; 
+   background-color: red;
+    height: auto;
+    width: 100%;
+ 
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 2000px;
+}
+
+
+
+button{
+    margin-top: 61px;
+    text-align: center;
+    justify-content: center; 
+ 
+}
+
+.Products{
+    text-align: center;
+    justify-content: center;
+    margin-top: 80px;
+
+}
+.soldProductRecord{
+   display: flex;
+
+    text-align: center;
+    justify-content: center;
+    margin-top: 80px;
+
+
+}
+.calculations{
+    display: flex;
+    justify-content: space-around ;
+}
