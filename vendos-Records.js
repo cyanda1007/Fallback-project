@@ -14,9 +14,7 @@ const vendorStrings = list.map(function(vprofit){
         <td>${vprofit.FruitProfit}</td>
         <td>${vprofit.VegProfit}</td>
         <td>${vprofit.OverallProfit}</td>
-        <td>${vprofit.EggPercent}</td>
-        <td>${vprofit.FruitPercent}</td>
-        <td>${vprofit.VeggiesPercent}</td>
+     
      
     </tr>`
     return vendorString;

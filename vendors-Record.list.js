@@ -5,9 +5,7 @@ const vendorsRecord = [
     FruitProfit: "70",
     VegProfit: "80",
     OverallProfit: "400",
-    EggPercent: "20",
-    FruitPercent: "20",
-    VeggiesPercent: "20",
+    
   },
   {
     Month: "February",
@@ -15,9 +13,7 @@ const vendorsRecord = [
     FruitProfit: "60",
     VegProfit: "50",
     OverallProfit: "470",
-    EggPercent: "20",
-    FruitPercent: "20",
-    VeggiesPercent: "20",
+    
   },
   {
     Month: "March",
@@ -25,9 +21,7 @@ const vendorsRecord = [
     FruitProfit: "50",
     VegProfit: "80",
     OverallProfit: "400",
-    EggPercent: "20",
-    FruitPercent: "20",
-    VeggiesPercent: "20",
+ 
   },
   {
     Month: "April",
@@ -35,8 +29,7 @@ const vendorsRecord = [
     FruitProfit: "70",
     VegProfit: "80",
     OverallProfit: "400",
-    EggPercent: "20",
-    FruitPercent: "20",
-    VeggiesPercent: "20",
+    
+  
   },
 ];

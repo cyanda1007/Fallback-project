@@ -17,19 +17,38 @@
         <td>{{FruitProfits}}</td>
         <td>{{VeggiesProfits}}</td>
         <td>{{OverallProfits}}</td>
-        <td>{{EggsPercentage}}</td>
-        <td>{{FruitPercentage}}</td>
-        <td>{{VeggiesPercentage</td>
+       
     </tr>
     {{/each}}
 	</script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 
 <body>
 
     <div class="container">
-
+        <section></section>
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-m"></i>
+            </div>
+            <nav>
+                <div class="hamb">
+                <span></span>
+                <span></span>
+                <span></span>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#product">Products</a></li>
+                    <li><a href="#soldProductRecord">records</a></li>
+                    <li><a href="#calculations">profits</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
 
       
       <div class="opacity">
@@ -108,7 +127,7 @@
             </div>
 
         </div>
-        <hr>
+         <hr>
         <div class="row" >
 			<div class="col" >
 				<input type="text" class="searchBox" placeholder="records" >
@@ -123,9 +142,7 @@
 						<th>FruitProfits</th>
 						<th>VeggiesProfits</th>
                         <th>OverallProfits</th>
-						<th>EggsPercentage</th>
-						<th>FruitPercentage</th>
-                        <th>VeggiesPercentage</th>
+						
 					</thead>
 					<tbody class='catergory'>
 						
