@@ -35,9 +35,5 @@ percentElem.value = profitArray[1]
 
 
 
-    if(product === 'fruits'){
-  let  fruitprofitArray = domFunction.fruitProfit(SoldfruitsElem.value)
-  fruitsProfit.value = fruitprofitArray[0]
-  fruitpercentElem.value = fruitprofitArray[1] 
-    } 
+  
 })
