@@ -21,7 +21,6 @@ const enterButtonElem = document.querySelector(".calculate")
 
 let product = "";
 let fruitProduct = "";
-<<<<<<< HEAD
 var hamburber = document.querySelector(".hamb");
 var navlist = document.querySelector(".nav-list");
 var links = document.querySelector(".nav-list li");
@@ -30,9 +29,6 @@ hamburber.addEventListener("click",function(){
     this.classList.toggle("click");
     navlist.classList.toggle("open");
 });
-=======
-let veggieProduct = "";
->>>>>>> 9287761d95671907870387953a278ce600d114c7
 
 radioEgg.addEventListener("click", ()=>{
     product ='eggs';
