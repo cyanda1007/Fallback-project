@@ -6,6 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Vendors Goods Stat App</title>
+
+
+
+    <script type="template-x" class="recordTemplate">
+		{{/each}}
+        {{#each catergory}}
+        <tr>
+        <td>{{EggsProfits}}</td>
+        <td>{{FruitProfits}}</td>
+        <td>{{VeggiesProfits}}</td>
+        <td>{{OverallProfits}}</td>
+        <td>{{EggsPercentage}}</td>
+        <td>{{FruitPercentage}}</td>
+        <td>{{VeggiesPercentage</td>
+    </tr>
+    {{/each}}
+	</script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,16 +31,18 @@
     <div class="container">
 
 
-        <h1>The Vendor's Products Statistics Keeper</h1>
-
+      
+      <div class="opacity">
+    <h1>The Vendor's Products Statistics Keeper</h1>
         <div class="Products">
             <input type="radio" name="Goods" class="radio radioEggs" value="eggs">Eggs
-            <input type="radio" name="Goods" class="radio" value="fruits"> Fruits
+            <input type="radio" name="Goods" class="radio radioFruit" value="fruits"> Fruits
             <input type="radio" name="Goods" class="radio" value="veggies"> Veggies
             <div class="buttonCalculate">
                 <button class="button-primary calculateButton" type="button" name="button">Calculate</button>
             </div>
         </div>
+       
 
         <div class="soldProductRecord">
             <div class="theEggs">
@@ -54,7 +73,7 @@
                 </div>
                 <div class="thefruitProfit">
                     <h4>Fruit Profit</h4>
-                    <input class="fruitprofit" type="number" placeholder="eg. 0.00">
+                    <input class="fruitprofit"  placeholder="eg. 0.00">
                 </div>
                 <div class="thevegProfit">
                     <h4>Veggies Profit</h4>
@@ -82,16 +101,41 @@
             </div>
 
         </div>
-
+        <hr>
+        <div class="row" >
+			<div class="col" >
+				<input type="text" class="searchBox" placeholder="records" >
+			</div>
+			
+		<div class="row" >
+			<div class="col" >
+				<table class="table" >
+					<thead>
+						<th>Month</th>
+						<th>EggsProfits</th>
+						<th>FruitProfits</th>
+						<th>VeggiesProfits</th>
+                        <th>OverallProfits</th>
+						<th>EggsPercentage</th>
+						<th>FruitPercentage</th>
+                        <th>VeggiesPercentage</th>
+					</thead>
+					<tbody class='catergory'>
+						
+					</tbody>
+				</table>
+			</div>
+		</div>
+		</div>
 
     </div>
-
-
     </div>
     <!-- <script src="./VendorsStat.fact.js" charset="utf-8"></script> -->
     <!-- <script src="JS/VendorsStat.dom.js" charset="utf-8">  </script> -->
      <script src="./test.js" charset="utf-8"></script> 
      <script src="./JS/test.dom.js" charset="utf-8">  </script>
+     <script src="vendors-Record.list.js" ></script>
+     <script src="vendos-Records.js"></script>
 
 </body>
 

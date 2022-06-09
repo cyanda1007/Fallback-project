@@ -1,31 +1,43 @@
-let domFunction = Calculate();
-let EggsProfit = document.querySelector(".eggProfit")
-let  SoldEggsElem = document.querySelector(".eggsold");
+const domFunction = Calculate();
+
+const EggsProfit = document.querySelector(".eggProfit")
+const fruitsProfit = document.querySelector(".fruitprofit")
+
+const  SoldEggsElem = document.querySelector(".eggsold");
+const  SoldfruitsElem = document.querySelector(".fruitsold");
 const CalculateButtonElem = document.querySelector(".calculateButton")
-let percentElem = document.querySelector(".eggPercent")
-var radioEgg = document.querySelector(".radioEggs");
+const percentElem = document.querySelector(".eggPercent")
+const fruitpercentElem = document.querySelector(".fruitPercent")
+const radioEgg = document.querySelector(".radioEggs");
+const radioFruit = document.querySelector(".radioFruit");
 const enterButtonElem = document.querySelector(".calculate")
 
 let product = "";
+let fruitProduct = "";
 
 radioEgg.addEventListener("click", ()=>{
-    product = 'eggs';
+    product ='eggs';
 })
-  let objectList = {'profits' : "percent"};
 
-  enterButtonElem.addEventListener('click', ()=>{
-alert(JSON.stringify(objectList))
-  })
-
+radioFruit.addEventListener("click", ()=>{
+    product ='fruits';
+})
 
 CalculateButtonElem.addEventListener('click', ()=>{
+   
+
     if(product === 'eggs'){
-        let  profitArray =   domFunction.eggProfit(SoldEggsElem.value)
+     let  profitArray =   domFunction.eggProfit(SoldEggsElem.value)
 EggsProfit.value = profitArray[0]
 percentElem.value = profitArray[1]  
-   
-objectList.profitArray[0] = profitArray[1];
-
-
     }
+
+
+
+
+    if(product === 'fruits'){
+  let  fruitprofitArray = domFunction.fruitProfit(SoldfruitsElem.value)
+  fruitsProfit.value = fruitprofitArray[0]
+  fruitpercentElem.value = fruitprofitArray[1] 
+    } 
 })
