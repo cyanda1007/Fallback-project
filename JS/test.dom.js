@@ -33,6 +33,7 @@ hamburber.addEventListener("click", function () {
 
 let veggieProduct = "";
 
+
 radioEgg.addEventListener("click", () => {
   product = "eggs";
 });
