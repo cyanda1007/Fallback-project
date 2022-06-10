@@ -29,131 +29,184 @@
 <body>
 
     <div class="container">
-       
+
         <header>
             <div class="logo">
                 <i class="fa-solid fa-m"></i>
             </div>
             <nav>
                 <div class="hamb">
-                <span></span>
-                <span></span>
-                <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
                 <ul class="nav-list">
-                    <li><a href="#home">home</a></li>
-                    <li><a href="#product">Products</a></li>
-                    <li><a href="#soldProductRecord">records</a></li>
-                    <li><a href="#calculations">profits</a></li>
-                    
+                    <!-- <li><a href="#about">About</a></li> -->
+                    <li><a href="#profit">Calculations</a></li>
+                    <li><a href="#records"> Records</a></li>
+                    <li><a href="#other">Other</a></li>
+
                 </ul>
             </nav>
         </header>
+        <!-- <section class="about" id="about">
+            <div class="info">
+                <h2>About Street Vendo's Record</h2>
+                <p>Street Vendors record app is an online space which is designed to help SA a street vendor's calculate
+                    and keep track of the important data and changes happening on their business ,
+                    .
 
-      
-      <div class="opacity">
-    <h1>The Vendor's Products Statistics Keeper</h1>
-        <div class="Products">
-            <input type="radio" name="Goods" class="radio radioEggs" value="eggs">Eggs
-            <input type="radio" name="Goods" class="radio radioFruit" value="fruits"> Fruits
-            <input type="radio" name="Goods" class="radio radioVeggie" value="veggies"> Veggies
-            <div class="buttonCalculate">
-                <button class="button-primary calculateButton" type="button" name="button">Calculate</button>
-            </div>
-        </div>
-       
+                <p>ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quod at necessitatibus
+                    ducimus vero accusamus itaque aspernatur ipsa fuga corrupti, ab natus reiciendis repudiandae quidem
+                    officia amet iste quia aut.</p>
+                <h2>Mission</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus eum laudantium facere, unde
+                    fuga totam quibusdam quos modi laborum voluptatem. Omnis voluptate asperiores rerum inventore,
+                    aperiam error odio qui numquam?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus eum laudantium facere, unde
+                    fuga totam quibusdam quos modi laborum voluptatem. Omnis voluptate asperiores rerum inventore,
+                    aperiam error odio qui numquam?</p>
 
-        <div class="soldProductRecord">
-            <div class="theEggs">
-                <h5>Eggs Sold</h5>
-                <input class="eggsold" type="number" placeholder="eg. 0.00">
-            </div>
-            <div class="theFruits">
-                <h5>Fruit Sold</h5>
-                <input class="fruitsold" type="number" placeholder="eg. 0.00">
-            </div>
-            <div class="theVeggies">
-                <h5>Veggies Sold</h5>
-                <input class="vegsold" type="number" placeholder="eg. 0.00">
-            </div>
-            <!-- <div class="button">
+
+
+
+                <h2>Customers</h2>
+                <p>Street Vendors record app is an online space which is designed to help SA a street vendor's calculate
+                    and keep track of the important data and changes happening on their business ,
+                    .
+                    ipsum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis quod nulla eligendi error
+                    inventore doloribus aspernatur odio veniam eum! Sit praesentium exercitationem perspiciatis
+                    laboriosam nemo nulla dicta tempora quia nesciunt!</p>
+
+
+            </div> -->
+            <!-- <hr> -->
+        </section>
+        <section class="profit" id="profit">
+            <div class="opacity">
+                <h1>The Vendor's Products Statistics Keeper</h1>
+                <div class="Products">
+                    <input type="radio" name="Goods" class="radio radioEggs" value="eggs">Eggs
+                    <input type="radio" name="Goods" class="radio radioFruit" value="fruits"> Fruits
+                    <input type="radio" name="Goods" class="radio radioVeggie" value="veggies"> Veggies
+                    <div class="buttonCalculate">
+                        <button class="button-primary calculateButton" type="button" name="button">Calculate</button>
+                    </div>
+                </div>
+
+
+                <div class="soldProductRecord">
+                    <div class="theEggs">
+                        <h5>Eggs Sold</h5>
+                        <input class="eggsold" type="number" placeholder="eg. 0.00">
+                    </div>
+                    <div class="theFruits">
+                        <h5>Fruit Sold</h5>
+                        <input class="fruitsold" type="number" placeholder="eg. 0.00">
+                    </div>
+                    <div class="theVeggies">
+                        <h5>Veggies Sold</h5>
+                        <input class="vegsold" type="number" placeholder="eg. 0.00">
+                    </div>
+                    <!-- <div class="button">
                 <button class="calculate" type="button" name="button">Enter</button>
             </div> -->
 
-        </div>
+                </div>
 
+                <hr>
+
+                <div class="calculations">
+                    <div class="profitTotals">
+                        <div class="theggsProfit">
+                            <h4>Eggs Profit</h4>
+                            <input class="eggProfit" placeholder="eg. 0.00">
+                        </div>
+                        <div class="thefruitProfit">
+                            <h4>Fruit Profit</h4>
+                            <input class="fruitprofit" placeholder="eg. 0.00">
+                        </div>
+                        <div class="thevegProfit">
+                            <h4>Veggies Profit</h4>
+                            <input class="vegprofit" placeholder="eg. 0.00">
+                        </div>
+
+                    </div>
+                    <div class="overtotal">
+                        <h4>Overall Profit</h4>
+                        <input class="overallprofit" type="number" placeholder="eg. 0.00">
+                    </div>
+
+                    <div class="profitPercentage">
+                        <div class="theeggPercent">
+                            <h4>Eggs Percentage Profit</h4>
+                            <input class="eggPercent" type="number" placeholder="eg 00%">
+                        </div>
+                        <div class="thefruitPercent">
+                            <h4>Fruits Percentage Profit</h4>
+                            <input class="fruitPercent" type="number" placeholder="eg. 00%">
+                        </div>
+                        <div class="thevegProfit">
+                            <h4>Veggies Percentage Profit</h4>
+                            <input class="vegPercent" type="number" placeholder="eg. 00%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <hr>
+        <section class="records" id="records">
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="searchBox" placeholder="records">
+                </div>
 
-        <div class="calculations">
-            <div class="profitTotals">
-                <div class="theggsProfit">
-                    <h4>Eggs Profit</h4>
-                    <input class="eggProfit"  placeholder="eg. 0.00">
-                </div>
-                <div class="thefruitProfit">
-                    <h4>Fruit Profit</h4>
-                    <input class="fruitprofit"  placeholder="eg. 0.00">
-                </div>
-                <div class="thevegProfit">
-                    <h4>Veggies Profit</h4>
-                    <input class="vegprofit"  placeholder="eg. 0.00">
-                </div>
-                
-            </div>
-            <div class="overtotal">
-                <h4>Overall Profit</h4>
-                <input class="overallprofit" type="number" placeholder="eg. 0.00">
-            </div>
+                <div class="row">
+                    <div class="col">
+                        <!-- <ul class="unoderedlist">
 
-            <div class="profitPercentage">
-                <div class="theeggPercent">
-                    <h4>Eggs Percentage Profit</h4>
-                    <input class="eggPercent" type="number" placeholder="eg 00%">
-                </div>
-                <div class="thefruitPercent">
-                    <h4>Fruits Percentage Profit</h4>
-                    <input class="fruitPercent" type="number" placeholder="eg. 00%">
-                </div>
-                <div class="thevegProfit">
-                    <h4>Veggies Percentage Profit</h4>
-                    <input class="vegPercent" type="number" placeholder="eg. 00%">
+                        </ul> -->
+                        <table class="table">
+                            <thead>
+                                <th>Month</th>
+                                <th>Eggs profits</th>
+                                <th>Fruit profits</th>
+                                <th>Veggies profits</th>
+                                <th>Overall profits</th>
+
+                            </thead>
+                            <tbody class='catergory'>
+                                <td class="unoderedmonth"> </td>
+                                <td class="unoderedlist"> </td>
+                                <td class="unoderedfruit"> </td>
+                                <td class="unoderedveggies"> </td>
+                                <td class="unoderedoveralltotal"> </td>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-        </div>
-        </div>
-         <hr>
-        <div class="row" >
-			<div class="col" >
-				<input type="text" class="searchBox" placeholder="records" >
-			</div>
-			
-		<div class="row" >
-			<div class="col" >
-				<table class="table" >
-					<thead>
-						<th>Month</th>
-						<th>Eggs profits</th>
-						<th>Fruit profits</th>
-						<th>Veggies profits</th>
-                        <th>Overall profits</th>
-						
-					</thead>
-					<tbody class='catergory'>
-						
-					</tbody>
-				</table>
-			</div>
-		</div>
-		</div>
+        </section>
+        <!-- <section class="other" id="other">
+            <div class="articles">
+                <h2>Related Articles</h2>
+            </div>
+            <ul>
+                <li><a href="#https://www.wiego.org/blog/mayors-five-step-guide-including-street-vendors-global-cities">Click
+                        here to see the content below.</a></li>
+                <li><a href="#http://www.scielo.org.za/scielo.php?script=sci_arttext&pid=S2310-38332017000100005"></a></li>
+            </ul>
 
-   
+        </section> -->
+
+
     </div>
     <!-- <script src="./VendorsStat.fact.js" charset="utf-8"></script> -->
     <!-- <script src="JS/VendorsStat.dom.js" charset="utf-8">  </script> -->
-     <script src="./test.js" charset="utf-8"></script> 
-     <script src="./JS/test.dom.js" charset="utf-8">  </script>
-     <script src="vendors-Record.list.js" ></script>
-     <script src="vendos-Records.js"></script>
+    <script src="./test.js" charset="utf-8"></script>
+    <script src="./JS/test.dom.js" charset="utf-8">  </script>
+    <script src="vendors-Record.list.js"></script>
+    <script src="vendos-Records.js"></script>
 
 </body>
 

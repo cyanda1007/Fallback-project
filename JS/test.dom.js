@@ -18,8 +18,11 @@ const radioEgg = document.querySelector(".radioEggs");
 const radioFruit = document.querySelector(".radioFruit");
 const radioVeggie = document.querySelector(".radioVeggie");
 const enterButtonElem = document.querySelector(".calculate");
-
-let product = "";
+const forTheNodeElem = document.querySelector(".unoderedlist");
+const forFruitTheNodeElem = document.querySelector(".unoderedfruit");
+const forVeggieTheNodeElem = document.querySelector(".unoderedveggies");
+const forOverallTheNodeElem = document.querySelector(".unoderedoveralltotal");
+// const forTheNodeElem = document.querySelector(".unoderedlist");
 let fruitProduct = "";
 
 var hamburber = document.querySelector(".hamb");
@@ -52,11 +55,15 @@ let profitForVeggie = 0;
 CalculateButtonElem.addEventListener("click", () => {
   if (product === "eggs") {
     let profitArray = domFunction.eggProfit(SoldEggsElem.value);
-    let profitNum = Number(profitArray[0].replace("R", ""));
+    var profitNum = Number(profitArray[0].replace("R", ""));
     EggsProfit.value = profitArray[0];
     profitForEgg = profitNum;
+    
     percentElem.value = profitArray[1];
+    createEggNode(profitNum);
+
   }
+  
 
   if (product === "fruits") {
     let fruitprofitArray = domFunction.fruitProfit(SoldfruitsElem.value);
@@ -64,6 +71,7 @@ CalculateButtonElem.addEventListener("click", () => {
     fruitsProfit.value = fruitprofitArray[0];
     profitForFruit = profitFruitNum;
     fruitpercentElem.value = fruitprofitArray[1];
+    createFruitNode(profitFruitNum);
   }
 
   if (product === "veggies") {
@@ -72,6 +80,38 @@ CalculateButtonElem.addEventListener("click", () => {
     veggiesProfit.value = veggieprofitArray[0];
     profitForVeggie = VeggieProfitNum;
     veggiePercentElem.value = veggieprofitArray[1];
+    createVeggieNode(VeggieProfitNum);
   }
-  totalProfit.value = profitForEgg + profitForFruit + profitForVeggie;
+let total = profitForEgg + profitForFruit + profitForVeggie;
+
+  totalProfit.value = total;
+console.log(profitNum)
+createOverallNode(total);
+// createNode(profitNum);
+//  const node = document.createElement("li");
+// const textnode = document.createTextNode(profitNum);
+// node.appendChild(textnode);
+// document.querySelector("unoderedlist").appendChild(node);
+
 });
+
+function createEggNode(number) {
+    var item = document.createElement("li");
+    item.innerHTML = number;
+    forTheNodeElem.appendChild(item)
+  }
+  function createFruitNode(number) {
+    var item = document.createElement("li");
+    item.innerHTML = number;
+    forFruitTheNodeElem.appendChild(item)
+  }
+  function createVeggieNode(number) {
+    var item = document.createElement("li");
+    item.innerHTML = number;
+    forVeggieTheNodeElem.appendChild(item)
+  }
+  function createOverallNode(number) {
+    var item = document.createElement("li");
+    item.innerHTML = number;
+    forOverallTheNodeElem.appendChild(item)
+  }
