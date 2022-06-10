@@ -6,7 +6,7 @@ h1{
 
 .container{
 color:black;
-    background:url(Pictures/istockphoto-861188910-612x612.jpg) no-repeat;
+    /* background:url(Pictures/istockphoto-861188910-612x612.jpg) no-repeat; */
     background-position: center center;
     background-size: cover; 
     height: auto;
@@ -36,10 +36,11 @@ button{
  
 }
 
+
 .Products{
     text-align: center;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 40px;
 
 }
 .soldProductRecord{
@@ -47,7 +48,7 @@ button{
 
     text-align: center;
     justify-content: center;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 
 
 }
@@ -81,10 +82,11 @@ nav .hamb{
     right: 3%;
     top:60px ;
     z-index: 5;
-    background: transparent;
+    /* background: transparent; */
     position: absolute;
     cursor:pointer ;
     display: none;
+    background-color: white;
 }
 nav .hamb span{
     display: block;
@@ -92,11 +94,15 @@ nav .hamb span{
     width: 100%;
     height: 3px;
     transition: .3s;
-    transition-property: transform opacity ;
+    /* transition-property: transform opacity ; */
 }
 nav .hamb span:nth-child(2){
     margin: 7px 0px;
 }
+hr{
+    border-color: pink;
+}
+
 nav .nav-list{
     list-style: none;
 
@@ -120,7 +126,7 @@ nav .nav-list li:not(:last-child) a:hover{
 }
 nav .nav-list li.btn a{
     display: inline-block;
-    background: transparent;
+    /* background: transparent; */
     border: 2px solid #c41d11;
     padding: 9px 28px;
     border-radius:30px;
@@ -207,6 +213,7 @@ nav .nav-list li.btn:hover a{
     }
     .calculations{
         flex-direction: column;
+        
         
     }
 }

@@ -1,39 +1,30 @@
-const productListTemplate = document.querySelector('.recordTemplate');
-const productCatergory = document.querySelector('.catergory');
-const searchBox = document.querySelector('.searchBox');
+const productListTemplate = document.querySelector(".recordTemplate");
+const productCatergory = document.querySelector(".catergory");
+const searchBox = document.querySelector(".searchBox");
 
 
-showRecords(vendorsRecord);
-// pizzas.innerHTML = "<tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>"
-
-function showRecords(list){
-const vendorStrings = list.map(function(vprofit){
-    let vendorString = `<tr>
-        <td>${vprofit.Month}</td>
-        <td>${vprofit.EggProfit}</td>
-        <td>${vprofit.FruitProfit}</td>
-        <td>${vprofit.VegProfit}</td>
-        <td>${vprofit.OverallProfit}</td>
+showRecords();
+function showRecords() {
+  //   localStorage.setItem("items", [[2022, []]]);
+  const vendor = localStorage.getItem("items");
+  console.log(typeof vendor);
+ for(vprofit of vendor){
+    vprofit[1].map(function (profit_) {
+      let vendorString = `<tr>
+        <td>${profit_.Month}</td>
+        <td>${profit_.EggProfit}</td>
+        <td>${profit_.FruitProfit}</td>
+        <td>${profit_.VegProfit}</td>
+        <td>${profit_.OverallProfit}</td>
      
      
-    </tr>`
-    return vendorString;
-  
-})
-const  htmlCatergories = vendorStrings.join("")
+    </tr>`;
+      return vendorString;
+    });
+  };
+  const htmlCatergories = vendorStrings.join("");
 
-productCatergory.innerHTML = htmlCatergories;
+  productCatergory.innerHTML = htmlCatergories;
 
+//   showRecords(filteredRecord);
 }
-
-
-searchBox.addEventListener("keyup", function(){
-const filterText = searchBox.value;
-const filteredRecord = vendorsRecord.filter(function (vprofit){
- return pizza.FruitProfit.includes(filterText) || 
- vprofit.EggProfit.includes(filterText)
-});
-
-
-showRecords(filteredRecord);
-});
